@@ -1,0 +1,10 @@
+[Desktop Entry]
+
+Name=pulsemixer
+Type=Application
+Categories=terminal
+Keywords=terminal
+
+Exec=pulsemixer
+StartupNotify=false
+Terminal=true
