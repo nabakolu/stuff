@@ -1,0 +1,12 @@
+[Desktop Entry]
+
+Name=nmtui
+GenericName=NetworkManager TUI
+
+Type=Application
+Categories=terminal
+Keywords=terminal
+
+Exec=nmtui
+StartupNotify=false
+Terminal=true
