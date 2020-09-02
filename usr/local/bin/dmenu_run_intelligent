@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS="$(ls -1 /usr/share/applications)"
+APPS="$(ls -1 /usr/share/applications/*.desktop | xargs -n1 basename)"
 CHOICE=$(echo "${APPS//.desktop}" | dmenu -i -p run -l 10"@")
 
 
