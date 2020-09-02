@@ -1,0 +1,3 @@
+notify-send -t 3000 "Started TTS"
+xsel | festival --tts
+notify-send -t 3000 "Finnished TTS"

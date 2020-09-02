@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CHOICE=$(printf "All\nSelect" | dmenu -l 2 -p Screenshot)
+
+sleep 0.5
+
+if [ $CHOICE = "All" ]
+	then
+	scrot -e 'mv $f ~/screenshots'
+elif [ $CHOICE = "Select" ]
+	then
+	scrot -sf -e 'mv $f ~/screenshots'
+fi

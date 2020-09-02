@@ -1,0 +1,2 @@
+#!/bin/bash
+dmenu-udevil.sh -u -n
