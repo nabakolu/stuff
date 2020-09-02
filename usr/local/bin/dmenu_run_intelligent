@@ -12,5 +12,5 @@ if [$(grep "Terminal=true" /usr/share/applications/$CHOICE.desktop) == ""]
 	then
 	echo "$Exec" | ${SHELL:-"/bin/sh"} &
 else
-	$TERM -e bash -i -c "$Exec"
+	$TERMINAL -e bash -i -c "$Exec"
 fi
