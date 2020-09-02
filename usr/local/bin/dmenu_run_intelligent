@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APPS="$(ls -1 /usr/share/applications)"
-CHOICE=$(echo "${APPS//.desktop}" | dmenu -p run -l 10"@")
+CHOICE=$(echo "${APPS//.desktop}" | dmenu -i -p run -l 10"@")
 
 
 A="$(grep -m 1 ^Exec= /usr/share/applications/$CHOICE.desktop)"

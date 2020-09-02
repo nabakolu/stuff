@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=st
+Comment=Simple Terminal
+GenericName=Terminal emulator
+TryExec=/usr/local/bin/st
+Exec=/usr/local/bin/st
+Categories=System;TerminalEmulator;
+Icon=/home/lukas/.config/fluff.jpg
