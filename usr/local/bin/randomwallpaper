@@ -1,4 +1,5 @@
 #!/bin/sh
 #nitrogen --random ~/.config/wallpapers/ --head=0 --set-zoom-fill
 #nitrogen --random ~/.config/wallpapers/ --head=1 --set-zoom-fill
-wal -i .config/wallpapers -t
+wal -i ~/.config/wallpapers -t
+pywal-discord
