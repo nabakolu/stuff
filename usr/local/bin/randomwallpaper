@@ -4,3 +4,4 @@
 wal -i ~/.config/wallpapers -t
 pywal-discord
 wal_steam
+pywalfox update
