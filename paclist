@@ -29,6 +29,7 @@ fftw 3.3.8-3
 firefox 81.0.2-1
 flex 2.6.4-3
 font-mathematica 9.0-6
+fortune-mod 2.12.0-1
 gcc 10.2.0-3
 gconf 3.2.6+11+g07808097-9
 gdb 9.2-2
@@ -59,6 +60,7 @@ mongoose 6.18-1
 mupdf 1.18.0-1
 nano 5.3-1
 neofetch 7.1.0-2
+neomutt 20200925-1
 nerd-fonts-inconsolata 2.1.0-2
 nerd-fonts-roboto-mono 2.1.0-1
 networkmanager 1.26.4-1
