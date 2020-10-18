@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=mocp
+Comment=Launches music on console interface
+Icon=utilities-terminal
+Terminal=true
+Exec=mocp
+Categories=ConsoleOnly
