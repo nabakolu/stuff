@@ -16,6 +16,7 @@ breeze-icons 5.75.0-1
 calcurse 4.6.0-2
 cava 0.7.2-2
 chafa 1.4.0-1
+cppcheck 2.1-1
 davfs2 1.6.0-1
 debootstrap 1.0.123-1
 discord 0.0.12-1
@@ -30,6 +31,7 @@ firefox 81.0.2-1
 flex 2.6.4-3
 font-mathematica 9.0-6
 fortune-mod 2.12.0-1
+fzf 0.23.1-1
 gcc 10.2.0-3
 gconf 3.2.6+11+g07808097-9
 gdb 9.2-2
