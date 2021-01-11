@@ -1,0 +1,73 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#statuspanel {
+
+  position: fixed;
+
+  right: -17px;
+
+  bottom: 0;
+
+  text-align: right;
+
+}
+
+
+
+#TabsToolbar:not([customizing="true"]) {
+
+  visibility: collapse !important;
+
+}
+
+/* if the titlebar is also hidden and your browser is maximized,
+
+ * clicking on the top pixel of the screen should trigger menu items (Fitt’s law)
+
+ */
+
+#toolbar-menubar {
+
+  padding-top: 0px !important;
+
+}
+
+#TabsToolbar:not([customizing="true"]) {
+
+  visibility: collapse !important;
+
+}
+
+/* if the titlebar is also hidden and your browser is maximized,
+
+ * clicking on the top pixel of the screen should trigger menu items (Fitt’s law)
+
+ */
+
+#toolbar-menubar {
+
+  padding-top: 0px !important;
+
+}
+
+
+
+
+
+#sidebar-box #sidebar-header {
+
+  visibility: collapse;
+
+}
+
+
+
+#sidebar-box {
+
+    overflow-x: hidden;
+
+    min-width: 32px !important;
+
+    max-width: 32px !important;
+
+}
