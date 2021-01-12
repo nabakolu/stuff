@@ -45,4 +45,8 @@ Addon Shortcuts:
 		-
 		-
 		-
-Disable vim vixen <S-ESC>
+vim vixen: 
+Disable <S-ESC>
+next tab: J
+previous tab: K
+
