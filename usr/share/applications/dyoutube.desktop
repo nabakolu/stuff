@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=dyoutube
+Comment=Search Youtube Videos with dmenu and watch with mpv
+Terminal=false
+Exec=dyoutube
