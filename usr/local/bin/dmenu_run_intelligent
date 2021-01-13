@@ -6,7 +6,7 @@ CHOICE=$(echo "${APPS//.desktop}" | dmenu -i -p run -l 10"@")
 
 A="$(grep -m 1 ^Exec= /usr/share/applications/$CHOICE.desktop)"
 Exec=${A##Exec=}
-
+Exec=${Exec%\%u}
 
 if [$(grep "Terminal=true" /usr/share/applications/$CHOICE.desktop) == ""]
 	then
