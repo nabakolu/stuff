@@ -2,15 +2,4 @@
 
 APPS="$(ls -1 /usr/share/applications/*.desktop | xargs -n1 basename)"
 CHOICE=$(echo "${APPS//.desktop}" | dmenu -i -p run -l 10"@")
-
-
-A="$(grep -m 1 ^Exec= /usr/share/applications/$CHOICE.desktop)"
-Exec=${A##Exec=}
-Exec=${Exec%\%u}
-
-if [$(grep "Terminal=true" /usr/share/applications/$CHOICE.desktop) == ""]
-	then
-	echo "$Exec" | ${SHELL:-"/bin/sh"} &
-else
-	$TERMINAL -e bash -i -c "echo -e '\033k'$CHOICE'\033\\';$Exec"
-fi
+gtk-launch $CHOICE
