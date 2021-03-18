@@ -1,0 +1,15 @@
+CHOICE=$(echo "abort
+shutdown
+hibernate
+" | dmenu -l 20)
+
+if [ "$CHOICE" = "shutdown" ]
+then
+	shutdown now
+fi
+
+if [ "$CHOICE" = "hibernate" ]
+then
+	betterlockscreen -l &
+	systemctl hibernate
+fi

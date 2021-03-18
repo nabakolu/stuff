@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=power
+Comment=Power Management dmenu script
+Exec=power
