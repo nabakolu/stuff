@@ -1,0 +1,12 @@
+[Desktop Entry]
+
+Name=neomutt
+GenericName=Neomutt
+
+Type=Application
+Categories=terminal
+Keywords=terminal
+
+Exec=neomutt
+StartupNotify=false
+Terminal=true
