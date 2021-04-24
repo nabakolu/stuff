@@ -8,7 +8,6 @@ binutils
 blueman
 cava
 chafa
-ckan
 clipmenu
 cronie
 cups
@@ -73,6 +72,7 @@ neofetch
 nerd-fonts-roboto-mono
 networkmanager
 noto-fonts-emoji
+npm
 ntfs-3g
 ocl-icd
 openal
@@ -112,7 +112,10 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
+themix-gui-git
+themix-theme-materia-git
 themix-full-git
+themix-theme-oomox-git
 ttf-liberation
 udevil
 umpv
