@@ -11,5 +11,6 @@ fi
 if [ "$CHOICE" = "hibernate" ]
 then
 	betterlockscreen -l &
+	killall keepassxc
 	systemctl hibernate
 fi
