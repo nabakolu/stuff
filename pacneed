@@ -1,180 +1,81 @@
-alacritty
-arandr
-autoconf
-automake
-base
-betterlockscreen
-binutils
-blueman
-cava
-chafa
-clipmenu
-cronie
-cups
-davfs2
-debtap
-dragon-drag-and-drop
-droidcam
-dunst
-dvtm
-epson-inkjet-printer-escpr
-fakeroot
-firefox
-flex
-fortune-mod
-fzf
-gcc
-git
-gnome-keyring
-grub
-gvim
-htop
-jdk-openjdk
-jdk8-openjdk
-jq
-keepassxc
-lf
-lib32-giflib
-lib32-gnutls
-lib32-gst-plugins-base-libs
-lib32-gtk3
-lib32-libgcrypt
-lib32-libjpeg-turbo
-lib32-libpng
-lib32-libpulse
-lib32-libva
-lib32-libxcomposite
-lib32-libxinerama
-lib32-libxslt
-lib32-mpg123
-lib32-ocl-icd
-lib32-openal
-lib32-v4l-utils
-libdvdcss
-libmediainfo
-libnotify
-libusb-compat
-libxft-bgra
-lxappearance
-lynx
-m4
-make
-materia-gtk-theme
-mediainfo
-moc-pulse
-mpg123
-mpv
-mupdf
-mutt-wizard
-neofetch
-nerd-fonts-roboto-mono
-networkmanager
-noto-fonts-emoji
-npm
-ntfs-3g
-ocl-icd
-openal
-openconnect
-openssh
-opustags
-pamixer
-pandoc
-patch
-pdfjs
-picom-tryone-git
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
-pulsemixer
-python-adblock
-python-lxml
-python-pip
-python-pywal
-python-wal-steam-git
-python2
-qt5-styleplugins
-qutebrowser
-screenkey
-scrot
-sudo
-sxiv
-texinfo
-texlive-bibtexextra
-texlive-core
-texlive-fontsextra
-texlive-formatsextra
-texlive-games
-texlive-humanities
-texlive-latexextra
-texlive-music
-texlive-pictures
-texlive-pstricks
-texlive-publishers
-texlive-science
-themix-gui-git
-themix-theme-materia-git
-themix-full-git
-themix-theme-oomox-git
-ttf-liberation
-udevil
-umpv
-unclutter
-unzip
-weechat
-wget
-which
-xclip
-xdotool
-xf86-video-vesa
-xorg-bdftopcf
-xorg-docs
-xorg-font-util
-xorg-fonts-100dpi
-xorg-fonts-75dpi
-xorg-fonts-encodings
-xorg-iceauth
-xorg-mkfontscale
-xorg-server
-xorg-server-common
-xorg-server-devel
-xorg-server-xephyr
-xorg-server-xnest
-xorg-server-xvfb
-xorg-sessreg
-xorg-setxkbmap
-xorg-smproxy
-xorg-x11perf
-xorg-xauth
-xorg-xbacklight
-xorg-xcmsdb
-xorg-xcursorgen
-xorg-xdpyinfo
-xorg-xdriinfo
-xorg-xev
-xorg-xgamma
-xorg-xhost
-xorg-xinit
-xorg-xinput
-xorg-xkbcomp
-xorg-xkbevd
-xorg-xkbutils
-xorg-xkill
-xorg-xlsatoms
-xorg-xlsclients
-xorg-xmodmap
-xorg-xpr
-xorg-xprop
-xorg-xrandr
-xorg-xrdb
-xorg-xrefresh
-xorg-xset
-xorg-xsetroot
-xorg-xvinfo
-xorg-xwayland
-xorg-xwd
-xorg-xwininfo
-xorg-xwud
-xsel
-yay
-youtube-dl
-zip
+alacritty #alacritty terminal
+arandr # screen layout manager
+base-devel # group for compiling and developing
+bash-completion # completions for bash
+betterdiscord-installer # installer for betterdiscord
+betterlockscreen # lockscreen used
+biber # latex references
+blueman # bluetooth manager
+bluez-utils # management tools for bluetooth
+cava # audio visualizer
+chafa # shows images in colored text in terminal
+clipmenu # clipboard management
+cups # priniting
+davfs2 # webdav in filesystem
+discord # discord
+dragon-drag-and-drop # drag and drop for lf
+dunst # notification daemon
+epson-inkjet-printer-escpr # printing for peson printer
+firefox # firefox browser
+fortune-mod # funny quotes
+fzf # fuzzy finder
+gimp # image program
+git # git
+gvim # provides vim with system clipboard support
+heroic-games-launcher-bin # epic games launcher
+keepassxc # password manager
+libnotify # notifications
+libreoffice-still # office suite
+libusb-compat # allow user space to communicate with usb
+libxft-bgra # allow st to render emojis
+lutris # game management
+lxappearance # change system theme
+masterpdfeditor-free # good pdf editor
+materia-gtk-theme # theme needed
+mediainfo # show mediainfo
+moc-pulse # music player
+mpv # video player
+mupdf # pdf viewer
+nerd-fonts-roboto-mono # font with nerd glyphs
+networkmanager # network manager
+noto-fonts-emoji-blob # emoji font
+ntfs-3g # ntfs driver
+openconnect # vpn
+openssh # ssh
+openvpn # private vpn
+opustags # change music tags
+pamixer # pulseaudio control commands
+pandoc # markdown
+pdfjs # show pdf in qutebrowser
+picom-tryone-git # composition manager
+protontricks # winetricks for steam
+pulseaudio # audio server
+pulseaudio-alsa # alsa integration
+pulseaudio-bluetooth # bluetooth for pulseaudio
+pulsemixer # pulseaudio control cli
+python-adblock # ad-block for qutebrowser
+python-pywal # pywal
+python-wal-steam-git # pywal for steam
+pywal-discord-git # pywal for betterdiscord
+qutebrowser # web browser
+scrot # screenshots
+skypeforlinux-stable-bin # skype
+steam # steam
+sxiv # image viewer
+texinfo #
+texlive-most # group for latex
+themix-full-git # gtk themeing
+udevil # user mounting
+umpv # chaining mpv in a playlist
+unclutter # hide cursor if inactive
+unzip # unarchive zip
+weechat # irc lcient
+wget # download files
+xclip # x clipboard
+xdg-utils # xdg utilities
+xdotool # 
+xorg # group for xorg
+xsel # xorg selection
+yay # aur package manager
+youtube-dl # download youtube videos
+zip # create zip archives
