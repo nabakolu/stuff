@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=bpyTOP
+Comment=Launches bpyTOP
+Icon=utilities-terminal
+Terminal=true
+Exec=bpytop
+Categories=ConsoleOnly
