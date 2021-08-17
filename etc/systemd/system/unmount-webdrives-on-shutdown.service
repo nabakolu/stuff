@@ -1,0 +1,12 @@
+[Unit]
+Description=Unmount webdrives before shutdown
+Before=shutdown.target reboot.target halt.target network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=/bin/umount /home/lukas/.webdav/
+
+[Install]
+WantedBy=multi-user.target
