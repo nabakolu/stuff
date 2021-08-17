@@ -1,1 +1,1 @@
-betterlockscreen -l -t "$(fortune -n 30 -s -o)"
+betterlockscreen -l #-t "$(fortune -n 30 -s -o)" # -t seems to be deprecated
