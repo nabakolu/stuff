@@ -7,6 +7,7 @@ betterlockscreen # lockscreen used
 biber # latex references
 blueman # bluetooth manager
 bluez-utils # management tools for bluetooth
+bpytop # task manager
 cava # audio visualizer
 chafa # shows images in colored text in terminal
 clipmenu # clipboard management
@@ -24,6 +25,7 @@ git # git
 gvim # provides vim with system clipboard support
 heroic-games-launcher-bin # epic games launcher
 keepassxc # password manager
+khal # calendar
 libnotify # notifications
 libreoffice-still # office suite
 libusb-compat # allow user space to communicate with usb
@@ -69,6 +71,7 @@ udevil # user mounting
 umpv # chaining mpv in a playlist
 unclutter # hide cursor if inactive
 unzip # unarchive zip
+vdirsyncer # caldav/carddav
 weechat # irc lcient
 wget # download files
 xclip # x clipboard
