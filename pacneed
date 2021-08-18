@@ -24,6 +24,7 @@ gimp # image program
 git # git
 gvim # provides vim with system clipboard support
 heroic-games-launcher-bin # epic games launcher
+isync # sync imap folders
 keepassxc # password manager
 khal # calendar
 libnotify # notifications
@@ -37,10 +38,12 @@ materia-gtk-theme # theme needed
 mediainfo # show mediainfo
 moc-pulse # music player
 mpv # video player
+msmtp # send emails
 mupdf # pdf viewer
 nerd-fonts-roboto-mono # font with nerd glyphs
 networkmanager # network manager
 noto-fonts-emoji-blob # emoji font
+neomutt # email client
 ntfs-3g # ntfs driver
 openconnect # vpn
 openssh # ssh
