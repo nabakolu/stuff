@@ -1,6 +1,8 @@
+#!/bin/bash
 CHOICE=$(echo "abort
 shutdown
 hibernate
+suspend
 " | dmenu -l 20)
 
 if [ "$CHOICE" = "shutdown" ]
@@ -12,4 +14,10 @@ if [ "$CHOICE" = "hibernate" ]
 then
 	betterlockscreen -l &
 	systemctl hibernate
+fi
+
+if [ "$CHOICE" = "suspend" ]
+then
+	betterlockscreen -l &
+	systemctl suspend
 fi
