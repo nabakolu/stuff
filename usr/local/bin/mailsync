@@ -1,12 +1,12 @@
 #!/bin/bash
 
-GMAIL0=$(find ~/mail/gmail/INBOX -type f | wc -l)
-MAILO0=$(find ~/mail/mailo/INBOX -type f | wc -l)
+GMAIL0=$(find ~/mail/gmail/INBOX/new -type f | wc -l)
+MAILO0=$(find ~/mail/mailo/INBOX/new -type f | wc -l)
 
 mbsync -a --quiet
 
-GMAIL1=$(find ~/mail/gmail/INBOX -type f | wc -l)
-MAILO1=$(find ~/mail/mailo/INBOX -type f | wc -l)
+GMAIL1=$(find ~/mail/gmail/INBOX/new -type f | wc -l)
+MAILO1=$(find ~/mail/mailo/INBOX/new -type f | wc -l)
 
 GMAIL2=$(($GMAIL1 - $GMAIL0))
 MAILO2=$(($MAILO1 - $MAILO0))
