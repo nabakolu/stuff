@@ -42,8 +42,9 @@ msmtp # send emails
 mupdf # pdf viewer
 nerd-fonts-roboto-mono # font with nerd glyphs
 networkmanager # network manager
-noto-fonts-emoji-blob # emoji font
 neomutt # email client
+newsboat # rss feed reader
+noto-fonts-emoji-blob # emoji font
 ntfs-3g # ntfs driver
 openconnect # vpn
 openssh # ssh
