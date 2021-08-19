@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=newsboat
+Comment=Launches newsboat
+Icon=utilities-terminal
+Terminal=true
+Exec=newsboat
+Categories=ConsoleOnly
