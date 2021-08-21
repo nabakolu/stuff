@@ -27,6 +27,7 @@ heroic-games-launcher-bin # epic games launcher
 isync # sync imap folders
 keepassxc # password manager
 khal # calendar
+khard # addressbook
 libnotify # notifications
 libreoffice-still # office suite
 libusb-compat # allow user space to communicate with usb
