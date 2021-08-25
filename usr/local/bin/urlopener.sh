@@ -10,6 +10,8 @@ fi
 case "$file" in
 	*mkv|*webm|*mp4|*youtube.com/watch*|*youtube.com/playlist*|*youtu.be*)
 		setsid -f mpv -quiet "$file" >/dev/null 2>&1 ;;
+	*soundcloud.com*)
+		youtube-dl -o "/tmp/%(title)s.%(ext)s" $file --exec xdg-open ;;
 	*png|*jpg|*jpe|*jpeg|*gif)
 		curl -sL "$file" > "/tmp/$(echo "$file" | sed "s/.*\///;s/%20/ /g")" && sxiv -a "/tmp/$(echo "$file" | sed "s/.*\///;s/%20/ /g")"  >/dev/null 2>&1 & ;;
 	*pdf)
