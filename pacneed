@@ -64,6 +64,7 @@ python-adblock # ad-block for qutebrowser
 python-pywal # pywal
 python-wal-steam-git # pywal for steam
 pywal-discord-git # pywal for betterdiscord
+qt5-styleplugins # for qt style uniform with gtk
 qutebrowser # web browser
 scrot # screenshots
 skypeforlinux-stable-bin # skype
