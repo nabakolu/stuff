@@ -14,7 +14,7 @@ case "$file" in
 		setsid -f mpv -quiet "$file" >/dev/null 2>&1 ;;
 
 	### Audio: download mp3 files, youtube-dl from soundcloud and play in xdg-open
-	*http*://*.mp3)
+	http*://*.mp3)
 		wget $file -P /tmp/ -nc
 		xdg-open /tmp/$(basename $file) ;;
 	*soundcloud.com*)
@@ -24,5 +24,5 @@ case "$file" in
 	*pdf)
 		curl -sL "$file" > "/tmp/$(echo "$file" | sed "s/.*\///;s/%20/ /g")" && mupdf "/tmp/$(echo "$file" | sed "s/.*\///;s/%20/ /g")"  >/dev/null 2>&1 & ;;
 	*)
-		[ -f "$file" ] && setsid -f "$TERMINAL" -e "$EDITOR" "$file" >/dev/null 2>&1 || setsid -f "$BROWSER" "$file" >/dev/null 2>&1
+		setsid -f "$BROWSER" "$file" >/dev/null 2>&1
 esac
