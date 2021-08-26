@@ -15,7 +15,7 @@ case "$file" in
 
 	### Audio: download mp3 files, youtube-dl from soundcloud and play in xdg-open
 	*http*://*.mp3)
-		wget $file -P /tmp/
+		wget $file -P /tmp/ -nc
 		xdg-open /tmp/$(basename $file) ;;
 	*soundcloud.com*)
 		youtube-dl -o "/tmp/%(title)s.%(ext)s" $file --exec xdg-open ;;
