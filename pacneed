@@ -24,6 +24,7 @@ gimp # image program
 git # git
 gvim # provides vim with system clipboard support
 heroic-games-launcher-bin # epic games launcher
+imlib2 # for dwm window icons
 isync # sync imap folders
 keepassxc # password manager
 khal # calendar
