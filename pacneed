@@ -47,6 +47,7 @@ networkmanager # network manager
 neomutt # email client
 newsboat # rss feed reader
 noto-fonts-emoji-blob # emoji font
+noisetorch # noise canceling for mic etc.
 ntfs-3g # ntfs driver
 openconnect # vpn
 openssh # ssh
@@ -87,5 +88,6 @@ xdotool #
 xorg # group for xorg
 xsel # xorg selection
 yay # aur package manager
+yt-dlp # youtube-dl without buffering issues
 youtube-dl # download youtube videos
 zip # create zip archives
