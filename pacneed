@@ -15,7 +15,7 @@ cups # priniting
 davfs2 # webdav in filesystem
 discord # discord
 dragon-drag-and-drop # drag and drop for lf
-dunst # notification daemon
+dunst # notification daemon (preferrybly version 1.6, as 1.7 breaks setting colours from from script)
 epson-inkjet-printer-escpr # printing for peson printer
 firefox # firefox browser
 fortune-mod # funny quotes
