@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Enter the album/book title:"; read -r booktitle
+
+echo "Enter the artist/author:"; read -r author
+
+echo "Enter the publication year:"; read -r year
+
+echo "Enter the amount of songs:"; read -r amount
+
+for SONG in `find $1 -type f -name "*"`
+do
+
+	echo "Enter the title for $(basename $SONG):"; read -r title
+	echo "Enter the number for $(basename $SONG):"; read -r number
+
+	tag -a "$author" -A "$booktitle" -d "$year" -N "$amount" -t "$title" -n "$number" "$SONG"
+done
