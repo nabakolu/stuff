@@ -6,13 +6,15 @@ echo "Enter the artist/author:"; read -r author
 
 echo "Enter the publication year:"; read -r year
 
-echo "Enter the amount of songs:"; read -r amount
+amount=$(ls | wc -l)
+number=0
 
 for SONG in `find $1 -type f -name "*" | sort`
 do
 
-	echo "Enter the title for $(basename $SONG):"; read -r title
-	echo "Enter the number for $(basename $SONG):"; read -r number
+	number=$(($number + 1))
+	title=$(basename $SONG | sed 's/.mp3$//g' | sed 's/.opus$//g' | sed -e 's/_/ /g' | sed 's/^[0-9][0-9]\-//g')
+	echo $number $title
 
 	tag -a "$author" -A "$booktitle" -d "$year" -N "$amount" -t "$title" -n "$number" "$SONG"
 done
