@@ -8,7 +8,7 @@ echo "Enter the publication year:"; read -r year
 
 echo "Enter the amount of songs:"; read -r amount
 
-for SONG in `find $1 -type f -name "*"`
+for SONG in `find $1 -type f -name "*" | sort`
 do
 
 	echo "Enter the title for $(basename $SONG):"; read -r title
