@@ -63,6 +63,7 @@ pulseaudio-alsa # alsa integration
 pulseaudio-bluetooth # bluetooth for pulseaudio
 pulsemixer # pulseaudio control cli
 python-adblock # ad-block for qutebrowser
+python-eyed3 # set mp3 file tags
 python-pywal # pywal
 python-wal-steam-git # pywal for steam
 pywal-discord-git # pywal for betterdiscord
