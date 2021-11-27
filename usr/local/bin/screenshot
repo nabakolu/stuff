@@ -9,5 +9,5 @@ if [ $CHOICE = "All" ]
 	scrot -e 'mv $f ~/screenshots'
 elif [ $CHOICE = "Select" ]
 	then
-	scrot -sf -e 'mv $f ~/screenshots'
+	scrot -s -e 'mv $f ~/screenshots'
 fi
