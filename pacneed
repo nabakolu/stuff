@@ -12,7 +12,6 @@ cava # audio visualizer
 chafa # shows images in colored text in terminal
 clipmenu # clipboard management
 cups # priniting
-davfs2 # webdav in filesystem
 discord # discord
 dragon-drag-and-drop # drag and drop for lf
 dunst # notification daemon (preferrybly version 1.6, as 1.7 breaks setting colours from from script)
