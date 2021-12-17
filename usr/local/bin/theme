@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+xdotool key "super+r"
+wal_steam
+pywal-discord
+pywalfox update
+killall dunst
+nohup ~/.config/dunst.sh > /dev/null 2>&1&
+oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
+notify-send "themeing finished"
