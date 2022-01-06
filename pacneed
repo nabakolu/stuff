@@ -41,7 +41,6 @@ moc-pulse # music player
 mpv # video player
 msmtp # send emails
 mupdf # pdf viewer
-nerd-fonts-roboto-mono # font with nerd glyphs
 networkmanager # network manager
 neomutt # email client
 newsboat # rss feed reader
