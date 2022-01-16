@@ -5,6 +5,7 @@ bash-completion # completions for bash
 betterdiscord-installer # installer for betterdiscord
 betterlockscreen # lockscreen used
 biber # latex references
+blesh-git # bash line editor with syntax highlighting and better completion
 blueman # bluetooth manager
 bluez-utils # management tools for bluetooth
 bpytop # task manager
