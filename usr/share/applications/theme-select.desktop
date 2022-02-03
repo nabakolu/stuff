@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=theme-select
+Comment=Pywal theme dmenu script
+Exec=theme-select.sh
