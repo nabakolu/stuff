@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=webcam
-Comment=Launches droidcam
-Icon=utilities-terminal
-Terminal=true
-Exec=webcam
-Categories=ConsoleOnly
