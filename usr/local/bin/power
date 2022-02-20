@@ -3,6 +3,7 @@ CHOICE=$(echo "abort
 shutdown
 hibernate
 suspend
+reboot
 " | dmenu -l 20)
 
 if [ "$CHOICE" = "shutdown" ]
@@ -20,4 +21,9 @@ if [ "$CHOICE" = "suspend" ]
 then
 	betterlockscreen -l &
 	systemctl suspend
+fi
+
+if [ "$CHOICE" = "reboot" ]
+then
+	systemctl reboot
 fi
