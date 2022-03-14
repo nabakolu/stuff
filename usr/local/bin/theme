@@ -2,6 +2,7 @@
 
 
 xdotool key "super+r"
+xdotool key "super+b"
 wal_steam
 pywal-discord
 pywalfox update
@@ -9,4 +10,5 @@ pywalfox update
 killall dunst
 nohup dunst > /dev/null 2>&1&
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
+xdotool key "super+b"
 notify-send "themeing finished"
