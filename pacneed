@@ -10,8 +10,10 @@ bluez-utils # management tools for bluetooth
 bpytop # task manager
 cava # audio visualizer
 chafa # shows images in colored text in terminal
+chromium-widevine # to watch widevine content in qutebrowser
 clipmenu # clipboard management
 cups # priniting
+cups-pdf # to allow cups to print to PDF
 discord # discord
 dragon-drag-and-drop # drag and drop for lf
 dunst # notification daemon (preferrybly version 1.6, as 1.7 breaks setting colours from from script)
@@ -21,9 +23,9 @@ fortune-mod # funny quotes
 fzf # fuzzy finder
 gimp # image program
 git # git
-gvim # provides vim with system clipboard support
 heroic-games-launcher-bin # epic games launcher
 imlib2 # for dwm window icons
+iriunwebcam-bin # to use smartphone as webcam
 isync # sync imap folders
 keepassxc # password manager
 khal # calendar
@@ -41,11 +43,12 @@ moc-pulse # music player
 mpv # video player
 msmtp # send emails
 mupdf # pdf viewer
-networkmanager # network manager
 neomutt # email client
+neovim # neovim editor
+networkmanager # network manager
 newsboat # rss feed reader
-noto-fonts-emoji-blob # emoji font
 noisetorch # noise canceling for mic etc.
+noto-fonts-emoji-blob # emoji font
 ntfs-3g # ntfs driver
 openconnect # vpn
 openssh # ssh
@@ -71,12 +74,14 @@ scrot # screenshots
 skypeforlinux-stable-bin # skype
 steam # steam
 sxiv # image viewer
+syncthing # syncing files between devices
 texinfo #
 texlive-most # group for latex
 themix-full-git # gtk themeing
 udevil # user mounting
 umpv # chaining mpv in a playlist
 unclutter # hide cursor if inactive
+unrar # unarchive rar
 unzip # unarchive zip
 vdirsyncer # caldav/carddav
 weechat # irc lcient
@@ -85,6 +90,7 @@ xclip # x clipboard
 xdg-utils # xdg utilities
 xdotool # 
 xorg # group for xorg
+xorg-xinit # for startx
 xsel # xorg selection
 yay # aur package manager
 yt-dlp # youtube-dl without buffering issues
