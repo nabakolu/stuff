@@ -13,13 +13,11 @@ fi
 
 if [ "$CHOICE" = "hibernate" ]
 then
-	betterlockscreen -l &
 	systemctl hibernate
 fi
 
 if [ "$CHOICE" = "suspend" ]
 then
-	betterlockscreen -l &
 	systemctl suspend
 fi
 
