@@ -1,3 +1,3 @@
 #!/bin/sh
 
-A=$(wal --theme | dmenu | awk '{print $2}') && wal --theme $A && theme
+A=$(find ~/.config/wal/colorschemes/*/*.json | dmenu) && wal --theme $A && theme
