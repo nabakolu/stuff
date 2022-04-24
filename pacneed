@@ -30,6 +30,7 @@ libreoffice-still
 libusb-compat
 lutris
 lxappearance
+maim
 materia-gtk-theme
 mediainfo
 mpv
@@ -55,7 +56,6 @@ python-eyed3
 python-pywal
 qutebrowser
 rust
-scrot
 steam
 sxiv
 syncthing

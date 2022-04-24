@@ -6,8 +6,8 @@ sleep 0.5
 
 if [ $CHOICE = "All" ]
 	then
-	scrot -e 'mv $f ~/screenshots'
+	maim | tee ~/screenshots/$(date +%s).png
 elif [ $CHOICE = "Select" ]
 	then
-	scrot -s -e 'mv $f ~/screenshots'
+	maim -s | tee ~/screenshots/$(date +%s).png
 fi
