@@ -1,8 +1,7 @@
 #!/bin/bash
 
 
-xdotool key "super+r"
-xdotool key "super+b"
+awesome-client command 'awesome.restart()'
 wal_steam
 pywal-discord
 pywalfox update
@@ -11,5 +10,4 @@ killall dunst
 nohup dunst > /dev/null 2>&1&
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
-xdotool key "super+b"
 notify-send "themeing finished"
