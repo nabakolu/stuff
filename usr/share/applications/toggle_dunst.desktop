@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=toggle dunst
-Comment=toggle dunst script
-Exec=toggle_dunst.sh
