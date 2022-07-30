@@ -5,9 +5,6 @@ awesome-client command 'awesome.restart()'
 wal_steam
 pywal-discord
 pywalfox update
-~/.config/dunst.sh > ~/.config/dunst/dunstrc
-killall dunst
-nohup dunst > /dev/null 2>&1&
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
 notify-send "themeing finished"
