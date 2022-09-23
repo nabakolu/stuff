@@ -18,7 +18,7 @@ case "$file" in
 		wget $file -O /tmp/$(basename $file) -nc
 		$TERMINAL -e mocp /tmp/$(basename $file) ;;
 	*soundcloud.com*)
-		youtube-dl -o "/tmp/%(title)s.%(ext)s" $file --exec xdg-open ;;
+		yt-dlp -o "/tmp/%(title)s.%(ext)s" $file --exec xdg-open ;;
 	*png|*jpg|*jpe|*jpeg|*gif)
 		curl -sL "$file" > "/tmp/$(echo "$file" | sed "s/.*\///;s/%20/ /g")" && sxiv -a "/tmp/$(echo "$file" | sed "s/.*\///;s/%20/ /g")"  >/dev/null 2>&1 & ;;
 	*pdf)
