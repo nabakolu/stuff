@@ -1,4 +1,7 @@
 #!/bin/sh
 
 fn=$(ls -t /tmp/videos/ | dmenu)
-mpv "/tmp/videos/$fn"
+if [ "$fn" != "" ] 
+then
+    mpv "/tmp/videos/$fn"
+fi
