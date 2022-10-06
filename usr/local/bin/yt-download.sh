@@ -1,7 +1,7 @@
 #!/bin/sh
 
 mkdir -p /tmp/videos
-json=$(yt-dlp "$1" --sponsorblock-remove all -o "/tmp/videos/%(title)s.%(ext)s" --print-json --no-warnings)
+json=$(yt-dlp "$1" --sponsorblock-remove all --force-keyframes-at-cuts -o "/tmp/videos/%(title)s.%(ext)s" --print-json --no-warnings)
 title=$(echo "$json" | jq -r .title)
 action=$(notify-send "yt-dlp" "Finished downloading\n $title" -A watch)
 
