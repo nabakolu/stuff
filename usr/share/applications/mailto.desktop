@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Mailto
+Exec=mailto.sh %u
