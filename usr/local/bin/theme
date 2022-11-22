@@ -2,9 +2,8 @@
 
 
 awesome-client command 'awesome.restart()'
+pidof st | xargs kill -s USR1
 wal_steam
-pywal-discord
-pywalfox update
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
 notify-send "themeing finished"
