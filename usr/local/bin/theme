@@ -1,9 +1,54 @@
 #!/bin/bash
 
 
+zathura(){
+
+    get_option() {
+        xrdb -query | grep $1 | awk '{print $2}'
+    }
+
+    mkdir -p "$HOME/.config/zathura"
+    touch "$HOME/.config/zathura/zathurarc"
+
+    cat > "$HOME/.config/zathura/zathurarc" <<- CONF
+set recolor
+set recolor-darkcolor "$(get_option *.foreground)"
+set recolor-lightcolor "$(get_option *.background:)"
+set default-bg "$(get_option *.background:)"
+set completion-bg "$(get_option *.background:)"
+set completion-fg "$(get_option *.foreground:)"
+set completion-group-bg "$(get_option *.background:)"
+set completion-group-fg "$(get_option *.foreground:)"
+set completion-highlight-bg "$(get_option *.color8:)"
+set completion-highlight-fg "$(get_option *.background:)"
+set inputbar-bg "$(get_option *.background:)"
+set inputbar-fg "$(get_option *.foreground:)"
+set notification-bg "$(get_option *.background:)"
+set notification-fg "$(get_option *.foreground:)"
+set notification-error-bg "$(get_option *.background:)"
+set notification-error-fg "$(get_option *.color4:)"
+set notification-warning-bg "$(get_option *.background:)"
+set notification-warning-fg "$(get_option *.color4:)"
+set tabbar-bg "$(get_option *.background:)"
+set tabbar-fg "$(get_option *.foreground:)"
+set tabbar-focus-bg "$(get_option *.background:)"
+set tabbar-focus-fg "$(get_option *.foreground:)"
+set statusbar-bg "$(get_option *.background:)"
+set statusbar-fg "$(get_option *.foreground:)"
+set highlight-color "$(get_option *.color2:)"
+set highlight-active-color "$(get_option *.color1:)"
+set highlight-transparency 0.8
+set selection-clipboard "clipboard"
+
+map i recolor
+CONF
+}
+
+
 awesome-client command 'awesome.restart()'
 pidof st | xargs kill -s USR1
 wal_steam
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
+zathura
 notify-send "themeing finished"
