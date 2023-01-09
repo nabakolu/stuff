@@ -33,7 +33,6 @@ materia-gtk-theme
 mediainfo
 mpv
 msmtp
-mupdf
 neomutt
 neovim
 networkmanager
@@ -77,4 +76,5 @@ xss-lock
 yay
 yt-dlp
 youtube-dl
+zathura-pdf-mupdf
 zip
