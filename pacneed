@@ -58,6 +58,7 @@ sxiv
 syncthing
 texinfo
 texlive-most
+tmux
 translate-shell
 udevil
 unclutter
@@ -66,6 +67,7 @@ unzip
 vdirsyncer
 weechat
 wget
+wmctrl
 xclip
 xdg-utils
 xdotool
