@@ -3,6 +3,7 @@ betterlockscreen
 bisc-bin
 cava
 chromium-widevine
+dmenu-bluetooth
 dragon-drop
 epson-inkjet-printer-escpr
 ferdium-bin
@@ -13,6 +14,7 @@ libxft-bgra
 masterpdfeditor-free
 moc-pulse
 mpv-sponsorblock-minimal-git
+networkmanager-dmenu-git
 noisetorch
 opustags
 picom-ibhagwan-git

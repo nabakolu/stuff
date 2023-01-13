@@ -1,0 +1,4 @@
+[Desktop Entry]
+Categories=Settings;Network;
+Name=Dmenu-Bluetooth
+Exec=dmenu-bluetooth
