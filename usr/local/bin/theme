@@ -43,6 +43,7 @@ CONF
 
 awesome-client command 'awesome.restart()'
 pidof st | xargs kill -s USR1
+pywal-discord
 wal_steam
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
