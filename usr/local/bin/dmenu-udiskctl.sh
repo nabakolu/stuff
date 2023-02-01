@@ -4,23 +4,23 @@
 DMENU="dmenu -l 10"
 
 DEV_LABEL="/dev/disk/by-label/"
-TMP="/tmp/dmnt-udevil-$(date +%s)"
+TMP="/tmp/dmnt-udisksctl-$(date +%s)"
 
 trap "rm -f $TMP" EXIT
 
 opt_mount_type=0
 opt_ignore_filter=0
 opt_notify=0
-udevil_cmd="mount"
+udiskctl_cmd="mount"
 
 usage() {
     cat <<-EOF
-	usage: dmenu-udevil [-mudihn]
+	usage: dmenu-udiskctl [-mudihn]
 	     -m Mount devices
 	     -u Unmount devices
 	     -d Select by device rather than by label
 	     -i Ignore filter and list all devices in /dev (with -d)
-	     -n Pass udevil output to notify-send
+	     -n Pass udiskctl output to notify-send
 	     -h Print help
 	EOF
 
@@ -28,7 +28,7 @@ usage() {
 
 dmenu_mnt() {
     if [[ $opt_mount_type -eq 1 ]]; then
-        prompt="$udevil_cmd by-device:"
+        prompt="$udiskctl_cmd by-device:"
         if [[ $opt_ignore_filter -eq 0 ]]; then
             res="$(find /dev -maxdepth 1 -not -type d -name "s[dr]*" -or -name "hd*" | cut -d'/' -f3 | ${DMENU} -p "$prompt")"
         else
@@ -39,7 +39,7 @@ dmenu_mnt() {
 
         [[ -z $res ]] && echo "Cancelled." && exit
     else
-        prompt="$udevil_cmd by-label:"
+        prompt="$udiskctl_cmd by-label:"
         res="$(find $DEV_LABEL* | cut -d'/' -f5 | ${DMENU} -p "$prompt")"
 
         path="$DEV_LABEL/$res"
@@ -47,7 +47,8 @@ dmenu_mnt() {
         [[ -z $res ]] && echo "Cancelled." && exit
     fi
 
-    udevil $udevil_cmd "$path" > "$TMP" 2>&1
+    path="$(realpath "$path")"
+    udisksctl $udiskctl_cmd -b "$path" > "$TMP" 2>&1
     exitc=$?
 
     if [[ $opt_notify -eq 1 ]]; then
@@ -64,7 +65,7 @@ dmenu_mnt() {
 while getopts ':mudhin' opt; do
     case "$opt" in
         m) ;;
-        u) udevil_cmd="umount";;
+        u) udiskctl_cmd="unmount";;
         d) opt_mount_type=1;;
         i) opt_ignore_filter=1;;
         h) usage && exit;;

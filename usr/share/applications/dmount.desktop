@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=dmount
-Comment=Uses dmenu and udevil to mount filesystems
+Comment=Uses dmenu and udiskctl to mount filesystems
 Terminal=false
 Exec=dmount
