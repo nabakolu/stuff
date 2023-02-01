@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Dmenu-LUKS
+Comment=Uses dmenu and udevil to lock/unlock LUKS devices
+Terminal=false
+Exec=dmenu-luks.sh
