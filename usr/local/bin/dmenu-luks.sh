@@ -24,4 +24,5 @@ then
 fi
 
 
-${TERMINAL:-st} -c FLOATING -g 60x1 -e udisksctl $choice && notify-send "Dmenu-LUKS" "Success" || notify-send "Dmenu-LUKS" "Failure"
+PS1=""
+${TERMINAL:-st} -c FLOATING -g 60x1 -e udisksctl $choice || notify-send "Dmenu-LUKS" "Failure"
