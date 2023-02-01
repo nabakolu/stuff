@@ -17,6 +17,11 @@ unlock $dev"
 done
 
 choice="$(echo "$choices" | tail -n +2 | dmenu | awk '{print $1 " -b " $2;}')"
-echo "$choice"
+
+if [ "$choice" = "" ]
+then
+    exit
+fi
+
 
 ${TERMINAL:-st} -c FLOATING -g 60x1 -e udisksctl $choice && notify-send "Dmenu-LUKS" "Success" || notify-send "Dmenu-LUKS" "Failure"
