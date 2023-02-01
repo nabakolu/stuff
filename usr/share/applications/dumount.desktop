@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=dumount
-Comment=Uses dmenu and udiskctl to unmount filesystems
+Comment=Uses dmenu and udevil to unmount filesystems
 Terminal=false
 Exec=dumount

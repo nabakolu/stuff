@@ -1,2 +1,2 @@
 #!/bin/bash
-dmenu-udiskctl.sh -u -n
+dmenu-udevil.sh -u -n
