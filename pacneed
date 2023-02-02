@@ -2,7 +2,7 @@ alacritty
 arandr
 base-devel
 bash-completion
-bbash-language-server
+bash-language-server
 bat
 biber
 bluez-utils
@@ -52,7 +52,6 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulsemixer
 python-adblock
-python-eyed3
 python-lsp-server
 python-pywal
 qutebrowser
@@ -79,7 +78,6 @@ xorg
 xorg-xinit
 xsel
 xss-lock
-yay
 yt-dlp
 youtube-dl
 zathura-pdf-mupdf
