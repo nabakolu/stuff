@@ -2,11 +2,13 @@ alacritty
 arandr
 base-devel
 bash-completion
+bbash-language-server
 bat
 biber
 bluez-utils
 btop
 chafa
+clang
 clipmenu
 cups
 cups-pdf
@@ -26,6 +28,7 @@ khard
 libnotify
 libreoffice-still
 libusb-compat
+lua-language-server
 lutris
 lxappearance
 maim
@@ -50,6 +53,7 @@ pulseaudio-bluetooth
 pulsemixer
 python-adblock
 python-eyed3
+python-lsp-server
 python-pywal
 qutebrowser
 rust
