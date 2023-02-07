@@ -42,7 +42,7 @@ openconnect
 openssh
 openvpn
 pamixer
-pandoc
+pandoc-cli
 pdfjs
 pulseaudio
 pulseaudio-alsa
