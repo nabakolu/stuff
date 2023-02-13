@@ -40,6 +40,38 @@ map i recolor
 CONF
 }
 
+gtk_settings(){
+    A=$(xrdb -query | grep "*.background:" | awk '{ print $2; }' | cut -c 2-3 | tr '[:lower:]' '[:upper:]')
+    B=$(xrdb -query | grep "*.background:" | awk '{ print $2; }' | cut -c 4-5 | tr '[:lower:]' '[:upper:]')
+    C=$(xrdb -query | grep "*.background:" | awk '{ print $2; }' | cut -c 6-7 | tr '[:lower:]' '[:upper:]')
+
+
+    echo "[Settings]
+gtk-button-images=1
+gtk-cursor-theme-name=Adwaita
+gtk-font-name=Sans 11
+gtk-icon-theme-name=xresources-icons
+gtk-menu-images=1
+gtk-theme-name=oomox-xresources-reverse
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-cursor-theme-size=0
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle=hintfull
+gtk-xft-rgba=rgb" > ~/.config/gtk-3.0/settings.ini
+
+
+    if [ "$(echo "ibase=16; $A+$B+$C" | bc)" -lt 382 ]
+    then
+        echo "gtk-application-prefer-dark-theme=1" >> ~/.config/gtk-3.0/settings.ini
+    else
+        echo "gtk-application-prefer-dark-theme=0" >> ~/.config/gtk-3.0/settings.ini
+    fi
+}
+
 
 awesome-client command 'awesome.restart()'
 pidof st | xargs kill -s USR1
@@ -48,4 +80,5 @@ wal_steam
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
 zathura
+gtk_settings
 notify-send "themeing finished"
