@@ -50,6 +50,7 @@ pulseaudio-bluetooth
 pulsemixer
 python-adblock
 python-pywal
+python-readability-lxml
 qutebrowser
 rust
 steam
