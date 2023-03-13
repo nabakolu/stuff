@@ -52,6 +52,7 @@ python-adblock
 python-pywal
 python-readability-lxml
 qutebrowser
+ripgrep
 rust
 steam
 sxiv
