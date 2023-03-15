@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=tmux-session
+Comment=Start/Attach to running tmux sessions
+Terminal=false
+Exec=tmux-session.sh
