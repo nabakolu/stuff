@@ -8,7 +8,7 @@ function tmux_sessions()
 TMUX_SESSION=$( (echo new; tmux_sessions) | dmenu -p "Select tmux session")
 
 if [[ x"new" = x"${TMUX_SESSION}" ]]; then
-    NAME=$(echo "" | dmenu -p "Enter session name")
+    NAME=$(echo "" | dmenu -p "Enter session name") || exit
     if [ "$NAME" = "" ]
     then
         $TERMINAL -e tmux new-session &

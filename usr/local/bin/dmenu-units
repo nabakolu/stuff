@@ -1,9 +1,9 @@
 #!/bin/sh
 
-INAMOUNT=$(echo "" | dmenu -p "amount")
-OUTUNIT=$(echo "" | dmenu -p "output unit")
+INAMOUNT=$(echo "" | dmenu -p "amount") || exit
+OUTUNIT=$(echo "" | dmenu -p "output unit") || exit
 
-OUTAMOUNT=$(units "$INAMOUNT" "$OUTUNIT" | head -n 1 | sed 's/.*\* //')
+OUTAMOUNT=$(units "$INAMOUNT" "$OUTUNIT" | head -n 1 | sed 's/.*\* //') || exit
 
-CLIP=$(echo "$OUTAMOUNT" | dmenu -p "$INAMOUNT are")
+CLIP=$(echo "$OUTAMOUNT" | dmenu -p "$INAMOUNT are") || exit
 printf "%s" "$CLIP" | xclip -i -selection clipboard
