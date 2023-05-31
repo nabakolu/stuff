@@ -5,5 +5,5 @@ OUTUNIT=$(echo "" | dmenu -p "output unit") || exit
 
 OUTAMOUNT=$(units "$INAMOUNT" "$OUTUNIT" | head -n 1 | sed 's/.*\* //') || exit
 
-CLIP=$(echo "$OUTAMOUNT" | dmenu -p "$INAMOUNT are") || exit
+CLIP=$(echo "$OUTAMOUNT" | dmenu -p "$INAMOUNT in $OUTUNIT are") || exit
 printf "%s" "$CLIP" | xclip -i -selection clipboard
