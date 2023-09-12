@@ -50,6 +50,7 @@ pulseaudio-bluetooth
 pulsemixer
 python-adblock
 python-pywal
+python-pyqt5
 python-readability-lxml
 qutebrowser
 ripgrep
@@ -58,9 +59,9 @@ steam
 sxiv
 syncthing
 texinfo
-texlive-most
 tmux
 translate-shell
+ttf-roboto-mono-nerd
 unclutter
 unrar
 unzip
@@ -76,6 +77,5 @@ xorg-xinit
 xsel
 xss-lock
 yt-dlp
-youtube-dl
 zathura-pdf-mupdf
 zip
