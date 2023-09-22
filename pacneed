@@ -44,6 +44,7 @@ openvpn
 pamixer
 pandoc-cli
 pdfjs
+picom
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
