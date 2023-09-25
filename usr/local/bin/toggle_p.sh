@@ -3,7 +3,7 @@
 
 COUNT=$(pgrep -c picom)
 if [ "$COUNT" = "0" ]; then
-	picom -b
+	picom -b --experimental-backends
 else
 	killall picom
 fi
