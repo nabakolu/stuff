@@ -20,13 +20,11 @@ then
     desktopW=$(wmctrl -l | sed -n "$num p" | cut -c 13)
     desktopC=$(wmctrl -d | grep "\*" | awk '{print $1}')
 
-    if [ "$desktopW" = "$desktopC" ]
-    then
-        maim -i "$id" | tee ~/screenshots/$(date +%s).png
-    else
-        wmctrl -s "$desktopW"
-        sleep 0.1
-        maim -i "$id" | tee ~/screenshots/$(date +%s).png
-        wmctrl -s "$desktopC"
-    fi
+    wmctrl -s "$desktopW"
+    while [ "$desktopW" != "$(wmctrl -d | grep "\*" | awk '{print $1}')" ]
+    do
+        true
+    done
+    maim -i "$id" | tee ~/screenshots/$(date +%s).png
+    wmctrl -s "$desktopC"
 fi
