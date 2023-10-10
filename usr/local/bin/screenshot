@@ -1,13 +1,32 @@
 #!/bin/bash
 
-CHOICE=$(printf "All\nSelect" | dmenu -l 2 -p Screenshot)
+CHOICE=$(printf "All\nSelect\nWindow" | dmenu -l 3 -p Screenshot)
 
 sleep 0.5
 
-if [ $CHOICE = "All" ]
-	then
-	maim | tee ~/screenshots/$(date +%s).png
-elif [ $CHOICE = "Select" ]
-	then
-	maim -s | tee ~/screenshots/$(date +%s).png
+if [ "$CHOICE" = "All" ]
+then
+    maim | tee ~/screenshots/$(date +%s).png
+elif [ "$CHOICE" = "Select" ]
+then
+    maim -s | tee ~/screenshots/$(date +%s).png
+elif [ "$CHOICE" = "Window" ]
+then
+    prompt="screenshot window"
+
+    num=$(wmctrl -l | sed 's/  / /' | cut -d " " -f 4- | nl -w 3 -n rn | sed -r 's/^([ 0-9]+)[ \t]*(.*)$/\1 - \2/' | dmenu -b -i -p "$prompt" | cut -d '-' -f -1)
+    [[ -z "$num" ]] && exit
+    id=$(echo "ibase=16;$(wmctrl -l | sed -n "$num p" | cut -c 3-10 | tr '[:lower:]' '[:upper:]')" | bc)
+    desktopW=$(wmctrl -l | sed -n "$num p" | cut -c 13)
+    desktopC=$(wmctrl -d | grep "\*" | awk '{print $1}')
+
+    if [ "$desktopW" = "$desktopC" ]
+    then
+        maim -i "$id" | tee ~/screenshots/$(date +%s).png
+    else
+        wmctrl -s "$desktopW"
+        sleep 0.1
+        maim -i "$id" | tee ~/screenshots/$(date +%s).png
+        wmctrl -s "$desktopC"
+    fi
 fi
