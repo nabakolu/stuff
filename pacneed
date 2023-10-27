@@ -27,7 +27,6 @@ khard
 libnotify
 libreoffice-still
 libusb-compat
-lutris
 lxappearance
 maim
 materia-gtk-theme
@@ -57,7 +56,6 @@ python-readability-lxml
 qutebrowser
 ripgrep
 rust
-steam
 sxiv
 syncthing
 texinfo
