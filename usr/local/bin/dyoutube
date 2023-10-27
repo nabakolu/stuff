@@ -14,6 +14,15 @@ urlstring="https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&
 
 
 
-choice=$(curl -s "${urlstring}" | jq -r '.items[] | "\(.snippet.channelTitle) => \(.snippet.title) => youtu.be/\(.id.videoId)"' | dmenu -i -p 'Select Video -' -l 20 | awk '{print $NF}') || exit
+video=$(curl -s "${urlstring}" | jq -r '.items[] | "\(.snippet.channelTitle) => \(.snippet.title) => youtu.be/\(.id.videoId)"' | dmenu -i -p 'Select Video -' -l 20 | awk '{print $NF}') || exit
 
-mpv "https://$choice"
+choice=$(echo "watch
+download" | dmenu) || exit
+
+if [ "$choice" = "watch" ]
+then
+    mpv "https://$video"
+elif [ "$choice" = "download" ]
+then
+    yt-download.sh "https://$video"
+fi
