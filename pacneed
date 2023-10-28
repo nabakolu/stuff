@@ -11,8 +11,10 @@ clipmenu
 cups
 cups-pdf
 discord
-firefox
+faad2
 feh
+ffmpeg4.4
+firefox
 fortune-mod
 fzf
 gimp
@@ -24,6 +26,8 @@ jq
 keepassxc
 khal
 khard
+libmodplug
+libmpcdec
 libnotify
 libreoffice-still
 libusb-compat
@@ -50,14 +54,16 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulsemixer
 python-adblock
-python-pywal
 python-pyqt5
+python-pywal
 python-readability-lxml
 qutebrowser
 ripgrep
 rust
+speex
 sxiv
 syncthing
+taglib
 texinfo
 texlive-langgerman
 texlive-meta
@@ -68,6 +74,7 @@ unclutter
 unrar
 unzip
 vdirsyncer
+wavpack
 weechat
 wget
 wmctrl
