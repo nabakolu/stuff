@@ -17,11 +17,15 @@ urlstring="https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&
 video=$(curl -s "${urlstring}" | jq -r '.items[] | "\(.snippet.channelTitle) => \(.snippet.title) => youtu.be/\(.id.videoId)"' | dmenu -i -p 'Select Video -' -l 20 | awk '{print $NF}') || exit
 
 choice=$(echo "watch
+add to umpv
 download" | dmenu) || exit
 
 if [ "$choice" = "watch" ]
 then
     mpv "https://$video"
+elif [ "$choice" = "add to umpv" ]
+then
+    umpv "https://$video"
 elif [ "$choice" = "download" ]
 then
     yt-download.sh "https://$video"
