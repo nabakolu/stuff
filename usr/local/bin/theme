@@ -46,4 +46,5 @@ pywal-discord
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
 zathura
+wal -R
 notify-send "themeing finished"
