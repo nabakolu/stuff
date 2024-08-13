@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sleep $((($(date -f - +%s- <<<$1$' tomorrow\nnow')0)%86400))
+shift
+"$@"
