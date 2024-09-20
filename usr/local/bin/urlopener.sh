@@ -9,8 +9,8 @@ fi
 
 case "$file" in
     http*://*spotify.com/*)
-        spotdl url $file | tail -n +3 > /tmp/spotdl
-        setsid -f mpv -quiet "$(cat /tmp/spotdl)" >/dev/null 2>&1 ;;
+        spotdl url $file > /tmp/spotdl
+        setsid -f mpv -quiet "$(grep "^https" /tmp/spotdl)" >/dev/null 2>&1 ;;
     ### Videos in mpv
     *.mkv|*.webm|*.mp4|*youtube.com/watch*|*youtu.be/*|*youtube.com/playlist*|*youtu.be/watch*|*ardmediathek.de/video*|*v.redd.it/*|*yewtu.be/watch*)
         nohup setsid -f mpv -quiet "$file" >/dev/null 2>&1 ;;
