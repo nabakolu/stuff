@@ -1016,7 +1016,7 @@ case "$DE" in
     open_deepin "$url"
     ;;
 
-    dwm)
+    awesome)
     open_lxde "$url"
     ;;
 
