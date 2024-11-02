@@ -5,6 +5,7 @@ base-devel
 bash-completion
 bat
 biber
+bluez
 bluez-utils
 btop
 chafa
@@ -52,9 +53,8 @@ pamixer
 pandoc-cli
 pdfjs
 picom
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
+pipewire
+pipewire-pulse
 pulsemixer
 python-adblock
 python-pyqt5
@@ -81,6 +81,7 @@ vdirsyncer
 wavpack
 weechat
 wget
+wireplumber
 wmctrl
 xclip
 xdg-utils
