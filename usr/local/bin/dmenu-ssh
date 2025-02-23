@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+CHOICE=$(grep "host " .ssh/config | awk '{ print $2 }' | dmenu) || exit
+
+$TERMINAL -e ssh $CHOICE
