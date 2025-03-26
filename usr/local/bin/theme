@@ -48,5 +48,5 @@ oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xres
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
 zathura
 wal -R
-qutebrowser ":config-source ~/.config/qutebrowser/qutewal.py"
+pgrep qutebrowser && qutebrowser ":config-source ~/.config/qutebrowser/qutewal.py"
 notify-send "themeing finished"
