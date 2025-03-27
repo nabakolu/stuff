@@ -44,6 +44,7 @@ neomutt
 neovim
 networkmanager
 newsboat
+nsxiv
 ntfs-3g
 openconnect
 openssh
@@ -63,7 +64,6 @@ qutebrowser
 ripgrep
 rust
 speex
-sxiv
 syncthing
 taglib
 texinfo
