@@ -42,8 +42,7 @@ CONF
 
 awesome-client command 'awesome.restart()'
 pidof st | xargs kill -s USR1
-pywal-discord -p ~/.config/vesktop/themes
-themecord -p
+cp ~/.cache/wal/colors-discord.css ~/.config/vesktop/themes/colors-discord.css
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources-reverse -o oomox-xresources-reverse -t ~/.themes
 oomox-archdroid-icons-cli /opt/oomox/scripted_colors/xresources/xresources2 -o xresources-icons
 zathura
