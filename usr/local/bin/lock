@@ -1,1 +1,1 @@
-betterlockscreen -l
+parallel --retries 0 --halt now,success=1 ::: 'betterlockscreen -l' 'fprintd-verify'
