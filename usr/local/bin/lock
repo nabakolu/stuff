@@ -1,1 +1,5 @@
+#!/bin/bash
+LOCKFILE="/tmp/betterlockscreen$(echo $DISPLAY | tr -d ':').lock"
+exec 200>"$LOCKFILE"
+flock -n 200 || exit 1
 parallel --retries 0 --halt now,success=1 ::: 'betterlockscreen -l' 'fprintd-verify'
