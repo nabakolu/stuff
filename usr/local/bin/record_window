@@ -1,40 +1,28 @@
 #!/bin/bash
-# record_window
-# Screen record a clicked window using ffmpeg (X11)
-# Press ENTER in terminal to stop recording
-# Saves compressed output to output.mkv
 
-# Set output file (can change)
-OUTPUT="output_$(date +%Y%m%d_%H%M%S).mkv"
+echo "Select audio source (monitor):"
+mapfile -t SOURCES < <(pactl list sources short | awk '{print $2}')
 
-# Ask user to select a window
-echo "Click the window to START recording..."
+select SRC in "${SOURCES[@]}"; do
+    if [[ -n "$SRC" ]]; then
+        echo "Using audio source: $SRC"
+        break
+    else
+        echo "Invalid selection"
+    fi
+done
+
+echo "Click the window you want to record..."
 eval $(xwininfo | awk '
-    /Absolute upper-left X:/ {x=$4}
-    /Absolute upper-left Y:/ {y=$4}
-    /Width:/ {w=$2}
-    /Height:/ {h=$2}
-    END {printf "X=%d Y=%d W=%d H=%d", x, y, w, h}
+/Absolute upper-left X/ {x=$4}
+/Absolute upper-left Y/ {y=$4}
+/Width/ {w=$2}
+/Height/ {h=$2}
+END {printf "X=%d Y=%d W=%d H=%d", x, y, w, h}
 ')
 
-# Start recording in background
-ffmpeg -f x11grab \
-    -video_size ${W}x${H} \
-    -framerate 30 \
-    -i :0.0+${X},${Y} \
-    -vf "format=yuv420p" \
-    -c:v libx264 \
-    -preset slow \
-    -crf 23 \
-    "$OUTPUT" &
-
-FFMPEG_PID=$!
-
-echo "Recording... press ENTER to stop."
-read
-
-# Stop recording cleanly
-kill -INT "$FFMPEG_PID"
-wait "$FFMPEG_PID"
-
-echo "Recording saved to $OUTPUT"
+ffmpeg -f x11grab -framerate 60 -video_size ${W}x${H} -i :0.0+${X},${Y} \
+       -f pulse -i "$SRC" \
+       -c:v libx264 -preset veryfast -crf 23 \
+       -c:a aac -b:a 192k \
+       "$(date +%F_%H-%M-%S).mkv"
