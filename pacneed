@@ -54,6 +54,7 @@ openssh
 openvpn
 pamixer
 pandoc-cli
+pacman-contrib
 pdfjs
 picom
 pipewire
